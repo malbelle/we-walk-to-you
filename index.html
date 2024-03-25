@@ -17,10 +17,10 @@
     <!-- styles -->
     <style>
       body {
-        font-family: "Dosis", sans-serif;
+        font-family: "times", sans-serif;
         margin: 2em;
-        background-color: #000;
-        color: #fff;
+        background-color: #e1eb34;
+        color: #02f2a2;
         font-size: 1.2em;
       }
       h1 {
@@ -35,13 +35,13 @@
     </style>
   </head>
   <body>
-    <h1>We walk to you</h1>
+    <h1>help what is coding</h1>
     <div id="poem"></div>
     <script>
       // set up the lists of words
-      const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+      const subjects = "you, I, we, they".split(","),
+        verbs = "cry, spit, weep, faint, grind".split(","),
+        objects = "donald trump, kim kardashian, elon musk, jeff bezos,".split(",");
       // set up the counter
       let counter = 0;
 
@@ -61,7 +61,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " on " + 
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
